@@ -24,10 +24,13 @@ public class Main {
 		MongoCollection<Document> collection = db.getCollection("futbol");
 		MongoCollection<FutbolistaNew> collection2 = db.getCollection("futbol",FutbolistaNew.class);
 
-		Operaciones.contarInternacionales(collection2);
-		Operaciones.insertar(collection2);
-		Operaciones.modificar(collection2);
 
+				
+		
+		Operaciones.verMayores30(collection2);
+		
+		
+		
 	}
 
 }
